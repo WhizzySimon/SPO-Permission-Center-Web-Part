@@ -1,40 +1,26 @@
-## SharePoint Permission Center web part
+## permission-center
 
-A modern SharePoint Online web part, released as open source under the [MIT License](https://choosealicense.com/licenses/mit/).
-
-Documentation: https://sharepoint-permission-center.com/
-
-The web part makes it easier for site owners and site users to answer the following questions:
-
-- Who has access to a site collection and with what permission level?
-- What are the members of a SharePoint group including members of nested Azure groups?
-- Why is a person member of a particular group?
-- What is the group nesting hierarchy of SharePoint and Azure groups?
-- What (hidden) groups do exist from shared documents and folders in the site?
-- What other (hidden) groups do exist without any assigned permission level?
-- How can I navigate to the classic SharePoint pages to manage groups and permissions?
-
-![SharePoint-Permission-Center-Screenshot](spc-screenshot1.png)
+This is where you include your WebPart documentation.
 
 ### Building the code
-Ensure that [Node.js](https://nodejs.org/) is installed. On Windows, run ```ship.bat```. On other systems use
 
 ```bash
-npm install gulp-cli -g
-npm install
-gulp clean
-gulp build
-gulp bundle --ship
-gulp package-solution --ship
+git clone the repo
+npm i
+npm i -g gulp
+gulp
 ```
 
-It outputs the file ```[PROJECT_DIR]\sharepoint\solution\permission-center-webpart.sppkg```.
+This package produces the following:
 
-### Testing the web part in the browser
+* lib/* - intermediate-stage commonjs build artifacts
+* dist/* - the bundled script, along with other resources
+* deploy/* - all resources which should be uploaded to a CDN.
 
-On Windows, run ```run.bat```. On other systems use
+### Build options
 
-```bash
-npm install
-gulp serve
-```
+gulp clean - TODO
+gulp test - TODO
+gulp serve - TODO
+gulp bundle - TODO
+gulp package-solution - TODO
